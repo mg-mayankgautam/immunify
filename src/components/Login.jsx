@@ -35,7 +35,7 @@ const Login = ({ onLogin }) => {
           className="loginlogo"
         /> */}
 
-        <h1 className="login-title">Secure Panel</h1>
+        <h1 className="login-logo">Imunify360</h1>
         <h1 className="login-title">Secure Panel</h1>
         <form
           className="login-form"

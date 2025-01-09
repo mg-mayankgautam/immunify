@@ -146,7 +146,7 @@ const Dashboard = () => {
               <td>4</td>
               <td>Haryana Medical Council</td>
               <td>haryanamedicalcouncil.in</td>
-              <td>10GB</td>
+              <td>1.2GB</td>
               <td>Active</td>
               <td>ASP .Net MVC</td>
               <td>1GB</td>

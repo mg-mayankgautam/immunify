@@ -4,7 +4,7 @@ import '../styles/Billing.css'; // Import the CSS file
 const Billing = () => {
   const runningInvoice = {
     total: 3059.0, // Total of all services
-    billingPeriod: '08/08/24 - 08/08/25',
+    billingPeriod: '10/08/25',
     lastBilledOn: '11/08/24',
     previousInvoice: 0.0,
     thisTimeLastMonth: 0.0,
@@ -47,7 +47,7 @@ const Billing = () => {
             <h2>Running Invoice Total</h2>
             <div className="invoice-details">
               <div>
-                <p style={{ fontWeight: 'bold' }}>Billing Period</p>
+                <p style={{ fontWeight: 'bold' }}>Active till</p>
                 <p >{runningInvoice.billingPeriod}</p>
               </div>
               <div>
