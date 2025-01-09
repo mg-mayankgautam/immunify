@@ -5,7 +5,7 @@ const Billing = () => {
   const runningInvoice = {
     total: 3059.0, // Total of all services
     billingPeriod: '08/08/24 - 08/08/25',
-    lastBilledOn: '08/08/24',
+    lastBilledOn: '11/08/24',
     previousInvoice: 0.0,
     thisTimeLastMonth: 0.0,
   };
@@ -47,23 +47,31 @@ const Billing = () => {
             <h2>Running Invoice Total</h2>
             <div className="invoice-details">
               <div>
-                <p>Billing Period</p>
-                <p>{runningInvoice.billingPeriod}</p>
+                <p style={{ fontWeight: 'bold' }}>Billing Period</p>
+                <p >{runningInvoice.billingPeriod}</p>
               </div>
               <div>
-                <p>Last Billed On</p>
-                <p>{runningInvoice.lastBilledOn}</p>
+                <p style={{ fontWeight: 'bold' }}>Last Billed On</p>
+                <p >{runningInvoice.lastBilledOn}</p>
               </div>
-              <div>
+
+              {/* <div>
                 <p>Previous Invoice</p>
                 <p>${runningInvoice.previousInvoice.toFixed(2)}</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p>This Time Last Month</p>
                 <p>${runningInvoice.thisTimeLastMonth.toFixed(2)}</p>
-              </div>
+              </div> */}
             </div>
-            <button className="view-invoice-button">View Current Invoice</button>
+            <a
+              href="/invoice_08-11-2024.pdf"
+              download="invoice_08-11-2024.pdf"
+              className="view-invoice-button"
+            >
+              View Current Invoice
+            </a>
+
           </div>
           <div className="billing-profile">
             <h3>Billing Profile</h3>
@@ -108,13 +116,13 @@ const Billing = () => {
             </div>
           </div>
           <div className="credits-section">
-        <h2>Available Credits</h2>
-        <p>Apply a promo code or activation code to add credits to your organization.</p>
-        <button className="apply-code-button">Apply Code</button>
-      </div>
+            <h2>Available Credits</h2>
+            <p>Apply a promo code or activation code to add credits to your organization.</p>
+            <button className="apply-code-button">Apply Code</button>
+          </div>
         </div>
       </div>
-      
+
     </div>
   );
 };

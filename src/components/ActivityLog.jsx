@@ -64,7 +64,7 @@ const ActivityLog = () => {
 
       {/* Live Scanner */}
       <div className="live-scanner">
-        <h2>Live Access Scanner</h2>
+        <h2>Live Malware Scan</h2>
         <div className="scanner-output">
           {liveScan.map((line, index) => (
             <pre key={index} className="code-line">

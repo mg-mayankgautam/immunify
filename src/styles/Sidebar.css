@@ -25,6 +25,9 @@
   .menu-item:hover {
       color: #01a860;
   }
+  .menu-item.mydomains:hover{
+    color: white !important;
+  }
 
   /* Expandable Menu */
   .expandable {
@@ -36,9 +39,9 @@
       transition: background-color 0.3s;
   }
 
-  /* .expandable:hover {
-      background-color: #3d3d3d;
-  } */
+  .expandable:hover {
+      color: var(--primary);
+  }
 
   .expand-button {
       background: none;
@@ -65,5 +68,6 @@
   }
 
   .submenu-item:hover {
+      /* color: var(--primary); */
       background-color: #4d4d4d;
   }

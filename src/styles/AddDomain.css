@@ -81,3 +81,7 @@ textarea:focus {
 .submit-button:hover {
     background-color: #018a50;
 }
+
+.add-domain-container input{
+    width: calc(100% - 20px)
+}

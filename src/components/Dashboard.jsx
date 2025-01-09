@@ -10,6 +10,9 @@ import BlacklistedIPs from './BlacklistedIPs';
 import ActivityLog from './ActivityLog';
 import Settings from './Settings';
 import Billing from './Billing';
+import HMC_Page from './HMC_Page';
+import DMC_Page from './DMC_Page';
+
 
 function App() {
     // State for controlling which component is rendered
@@ -35,6 +38,10 @@ function App() {
                 return <FirewallRules />;
             case 'activityLogs':
                 return <ActivityLog />;
+            case 'haryanamedicalcouncil.org':
+                return <HMC_Page />;
+            case 'DelhiSubscriptionPage':
+                return <DMC_Page />;
             default:
                 return <DashboardReal />; // Default to DashboardReal
         }
