@@ -1,0 +1,57 @@
+.dashboard {
+    font-family: inherit;
+    margin: 20px;
+  }
+  
+  .top-section {
+    margin-bottom: 40px;
+  }
+  
+  .server-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .server-details > div {
+    width: 48%;
+    line-height: 1.8;
+  }
+
+  .server-details-col{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 10px;
+    width: 100%;
+  }
+  .server-details-col p{
+    margin: 1px 0;
+  }
+  
+  .domains-section {
+    margin-top: 20px;
+  }
+  
+  .domains-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .domains-table th, .domains-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .domains-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .domains-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .domains-table tr:hover {
+    background-color: #eaeaea;
+  }
+  
